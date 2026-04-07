@@ -23,7 +23,6 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
-<<<<<<< HEAD
 _sass/vendors
 assets/js/dist
 
@@ -31,5 +30,3 @@ assets/js/dist
 *~
 .DS_Store
 Thumbs.db
-=======
->>>>>>> a970d73 (chore: initialize the environment)
