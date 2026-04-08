@@ -14,6 +14,6 @@ The blog is built using:
 
 ## License
 The source code is under the "MIT License" - © 2019 Cotes Chung  
-The editorial material is under the "Creative Commons BY-NC-SA 4.0 License" - © 2026 Marc Revelles  
+The editorial content is under the "Creative Commons BY-NC-SA 4.0 License" - © 2026 Marc Revelles  
 
 Check the LICENSE file for more details.
