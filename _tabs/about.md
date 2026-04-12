@@ -4,5 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Revelles Lab is my technical blog, where I post about cybersecurity, self-hosting, and hardware hacking. 
+The main objective of the blog is to document the challenges that I face while building secure and reliable infrastructure. 
+I hope that you find the information on the blog to be helpful.
