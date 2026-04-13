@@ -10,6 +10,7 @@ The blog is built using:
 - Chirpy theme
 - GitHub Pages for hosting
 - GitHub Actions for CI/CD
+- Google Analytics for traffic statistics
 
 
 ## License
