@@ -198,7 +198,7 @@ Then, run the monitoring tool `nvidia-smi` and check that the “Persistence-M�
 nvidia-smi
 ```
 
-![nvidia-smi persistence status]({{ '/assets/img/posts/nvidia_smi_persistence.png' | relative_url }}){: width="827" height="352" }
+![nvidia-smi persistence status]({{ '/assets/img/posts/nvidia_smi_persistence.png' | absolute_url }}){: width="827" height="352" }
 
 
 ## Creating the Jellyfin LXC and passing-through the device files
@@ -217,7 +217,7 @@ If you followed all the previous steps, the installer will detect the NVIDIA GPU
 
 Output of the installation script with the default settings:
 
-![Default output of Jellyfin's installation script]({{ '/assets/img/posts/jellyfin_helper_script.png' | relative_url }}){: width="1017" height="959" }
+![Default output of Jellyfin's installation script]({{ '/assets/img/posts/jellyfin_helper_script.png' | absolute_url }}){: width="1017" height="959" }
 
 As a summary, the script will:
 - Create the LXC with the selected settings.
@@ -326,7 +326,7 @@ Mark the supported codecs of your GPU. Then check the “Enable Tone mapping” 
 
 I have an NVIDIA Quadro T600, so in my case, the transcoding configuration looks like this:
 
-![Jellyfin's transcoding configuration - NVIDIA Quadro T600]({{ '/assets/img/posts/jellyfin_transcoding_settings.png' | relative_url }}){: width="1463" height="1244" }
+![Jellyfin's transcoding configuration - NVIDIA Quadro T600]({{ '/assets/img/posts/jellyfin_transcoding_settings.png' | absolute_url }}){: width="1463" height="1244" }
 
 
 ### Verifying the video transcoding
@@ -336,7 +336,7 @@ Once the video starts playing, open the playback settings by clicking on the gea
 
 We want the “Play method” value to change from “Direct playing” to “Transcoding”. We will **force that by changing the video quality in the playback settings**. Wait a few seconds for the change to take effect.
 
-![Live transcoding - Jellyfin's playback info]({{ '/assets/img/posts/jellyfin_live_transcoding.png' | relative_url }}){: width="817" height="686" }
+![Live transcoding - Jellyfin's playback info]({{ '/assets/img/posts/jellyfin_live_transcoding.png' | absolute_url }}){: width="817" height="686" }
 
 We can double-check that the hardware acceleration transcoding is working by running the following command in the Proxmox console. We should see, in real time, how the GPU usage increases while it’s transcoding.
 
@@ -344,6 +344,6 @@ We can double-check that the hardware acceleration transcoding is working by run
 watch -n 1 nvidia-smi
 ```
 
-![nvidia-smi usage while transcoding]({{ '/assets/img/posts/nvidia_smi_usage.png' | relative_url }}){: width="828" height="379" }
+![nvidia-smi usage while transcoding]({{ '/assets/img/posts/nvidia_smi_usage.png' | absolute_url }}){: width="828" height="379" }
 
 Congratulations! You have properly configured the NVIDIA passthrough in Proxmox and the hardware acceleration transcoding in Jellyfin. Depending on your GPU capabilities, this setup will be able to handle multiple 4K concurrent streams 🎉
